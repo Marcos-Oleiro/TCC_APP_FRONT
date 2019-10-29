@@ -1,0 +1,26 @@
+#msg{
+  position: absolute;
+  margin-top: 30vh;
+  text-align: center;
+} 
+
+#sliderDiv {
+  display: inline-block;
+  width: 80%;
+  margin-top: 65vh;
+  margin-left: 10%;
+  margin-right: 10%;
+  text-align: center
+}
+
+#submit{
+  background-color: whitesmoke;
+  margin-top: 5.5vh;
+  margin-left: 40vw;
+}
+input[type="range"]::-webkit-slider-thumb {
+  border: 1px solid #000000;
+  background: #71d9ff;
+}
+
+

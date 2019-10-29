@@ -2,12 +2,24 @@ import { Service } from "./service/Service.js"
 
 const divPhoto = document.querySelector('div.photo');
 const divName = document.querySelector('div.name');
+const btnRange = document.getElementById('btn-finder')
 const img = document.querySelector('img');
 
 
 document.addEventListener('deviceready', function() {
+  console.clear();
   loadInfo();
 });
+
+btnRange.addEventListener('click', function (){
+  if (!localStorage.hasOwnProperty('range')){
+    window.location = 'range.html';
+  }else{
+    window.location = 'finder.html'
+  }
+  
+});
+
 
 function loadInfo(){
 
