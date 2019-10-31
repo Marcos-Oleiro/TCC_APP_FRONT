@@ -1,5 +1,8 @@
 body{
-    background-color: #71d9ff
+    /* background-color: #0f3f50; */
+    /* background-color: #0d0436e3 ; */
+    background-color: #101938 ;
+    /* background-image: url('../img/texture.jpg') */
     
 }
 .content{
@@ -7,9 +10,14 @@ body{
     width: 100vw;
     font-family: 'Poppins',sans-serif;
     font-size: 0.8em;
+    
 }
 .logo{
     /* background: rgb(32, 164, 208); */
     width: 40vw;
     height: 35vh;
+}
+
+.formcard{
+    border-radius: 50%;
 }

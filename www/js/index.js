@@ -7,6 +7,7 @@ const error = new URLSearchParams(location.search);
 
 document.addEventListener('deviceready', function () {
   // Função do Jquery - quando o evento submit é realizado, chama a função SendLoginForm
+  console.clear();
   $('#login_form').submit(SendLoginForm);
 
 

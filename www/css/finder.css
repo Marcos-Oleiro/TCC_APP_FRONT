@@ -25,11 +25,18 @@
   background-color: black; 
 }   */
 body{
-  background-color: black
+  /* background-color: black */
 }
 .testeclass{
   /* border: 3px solid black   */
 }
 .totalcard{
+  margin-top: 5vh
+}
+.cardsize{
+  min-height: 85vh;
+  height: auto;
+}
+#desc{
   margin-top: 5vh
 }
