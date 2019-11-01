@@ -17,9 +17,15 @@
 .materialize-textarea::-webkit-input-placeholder{
     color: #130e59
 }
-
-.whitebg{
-    background-color: white; 
-    border: 1px solid black; 
-    border-radius: 10px
+/* #card{
+    margin-top: 0vh;
+} */
+#hidden-menu{
+    position: absolute;
+}
+#dropdown1{
+    /* background-color: black;     */
+}
+#profile_button, #passwd_button{
+    color:#101938
 }

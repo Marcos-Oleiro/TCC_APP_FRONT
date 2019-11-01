@@ -8,16 +8,19 @@ const desc_verif_fail = document.querySelector('div.desc_verif_fail');
 const desc_verif_suc = document.querySelector('div.desc_verif_suc');
 
 document.addEventListener('deviceready', function () {
+  console.clear();
   divName.textContent = localStorage['nickname'];
   // document.querySelector('#desc_text').value = localStorage['desc'];
   // img.src = "../img/icon_profile5.png";
   loadCurrentDesc();
+  
   $('#form_desc').submit(UpDateDesc);
 });
 
 function loadCurrentDesc() {
   // localStorage['description'] = "teste"; 
   if (localStorage['description'] !== 'null') {
+    // txtDesc.textContent = localStora
     txtDesc.textContent = localStorage['description'];
   }
 }

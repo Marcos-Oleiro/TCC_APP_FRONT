@@ -7,9 +7,9 @@
     <meta name="msapplication-tap-highlight" content="no">
     <meta name="viewport"
         content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
-    <link rel="stylesheet" type="text/css" href="../css/index.css">
     <link rel="stylesheet" type="text/css" href="../css/materialize.min.css">
     <link rel="stylesheet" type="text/css" href="../css/home.css">
+    <link rel="stylesheet" type="text/css" href="../css/index.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Poppins:900" rel="stylesheet">
     <title>Página Inicial</title>
@@ -22,53 +22,75 @@
         <br><br><br>
         <center>
             <div class="row">
+                <div class="col s12 m10 offset-m1">
+                    <div class="card indigo lighten-5" id="card">
+                        <div class="card-content black-text">
+                            <!-- <span class="card-title">
+                                                    Card Title
+                                                </span> -->
+                            <div class="row">
 
-                <nav class="transparent z-depth-0">
-                    <div class="nav-wrapper">
-                        <a class="brand-logo center  light-blue lighten-2" style="border-radius: 10px" id="name_button">
-                            <div class="name white-text"></div>
-                        </a>
-                        <ul id="nav-mobile" class="right">
+                                <nav class="transparent z-depth-0">
+                                    <div class="nav-wrapper">
+                                        <a class="brand-logo center  light-blue lighten-2" style="border-radius: 10px"
+                                            id="name_button">
+                                            <div class="name white-text btn-bg flow-text" id="username"></div>
+                                        </a>
+                                        <ul id="nav-mobile" class="right">
 
-                            <!-- Dropdown Trigger-->
-                            <a class='dropdown-button btn-flat' data-activates='dropdown1'><i
-                                    class="material-icons">more_vert</i></a>
+                                            <!-- Dropdown Trigger-->
+                                            <a class='dropdown-button btn-flat' data-activates='dropdown1'><i
+                                                    class="material-icons" id="hidden-menu">more_vert</i></a>
 
-                            <!-- Dropdown Structure -->
-                            <ul id='dropdown1' class='dropdown-content'>
-                                <!-- <li><a href="#" class="light-blue-text" id="profile_button">Perfil</a></li> -->
-                                <!-- <li><a href="#!" class="light-blue-text" id="passwd_button">Alterar Senha</a></li> -->
-                                <li><a href="profile.html" class="light-blue-text" id="profile_button">Perfil</a></li>
-                                <li><a href="change_passwd.html" class="light-blue-text" id="passwd_button">Alterar
-                                        Senha</a></li>
-                            </ul>
+                                            <!-- Dropdown Structure -->
+                                            <ul id='dropdown1' class='dropdown-content'>
+                                                <!-- <li><a href="#" class="light-blue-text" id="profile_button">Perfil</a></li> -->
+                                                <!-- <li><a href="#!" class="light-blue-text" id="passwd_button">Alterar Senha</a></li> -->
+                                                <li><a href="profile.html" class="menuop" id="profile_button">Perfil</a>
+                                                </li>
+                                                <li><a href="change_passwd.html" class=" menuop"
+                                                        id="passwd_button">Alterar
+                                                        Senha</a></li>
+                                            </ul>
 
-                        </ul>
+                                        </ul>
+                                    </div>
+                                </nav>
+                            </div>
+                            <br><br>
+                            <div class="row" id="fundo">
+
+                                <!-- <img src="../img/gohan.jpeg" alt="Informe a imagem" class=" responsive-img" id="photo">   -->
+                                <!-- <img alt="Informe a imagem" class=" responsive-img" id="photo">   -->
+                                <img class=" responsive-img" id="photo">
+                                <br><br><br><br><br><br><br>
+
+                            </div>
+
+                            <div class="row">
+                                <!-- <a href="finder.html" class="btn-flat black-text whitebg"> -->
+                                <!-- <a class="btn btn-flat btn-bg" id="btn-finder">
+                                    Buscar Jogadores
+                                </a> -->
+                                <button class="btn btn-blue btn-bg" type="submit" id="btn-finder" name="action">Buscar
+                                    Jogadores</button>
+                            </div>
+                            <div class="row">
+                                <button class="btn btn-blue btn-bg" type="submit" id="btn-finder"
+                                    name="action">Mensagem</button>
+                                <!-- <a href="messages.html" class="btn btn-flat btn-bg">
+                                    Mensagens
+                                </a> -->
+                            </div>
+
+                        </div>
+                        <!-- <div class="card-action">
+                                              <a href="#">This is a link</a>
+                                              <a href="#">This is a link</a>
+                                            </div> -->
                     </div>
-                </nav>
+                </div>
             </div>
-            <br><br>
-            <div class="row" id="fundo">
-
-                <!-- <img src="../img/gohan.jpeg" alt="Informe a imagem" class=" responsive-img" id="photo">   -->
-                <!-- <img alt="Informe a imagem" class=" responsive-img" id="photo">   -->
-                <img class=" responsive-img" id="photo">
-                <br><br><br><br><br><br><br>
-
-            </div>
-
-            <div class="row">
-                <!-- <a href="finder.html" class="btn-flat black-text whitebg"> -->
-                <a class="btn-flat black-text whitebg" id="btn-finder">
-                    Buscar Jogadores
-                </a>
-            </div>
-            <div class="row">
-                <a href="messages.html" class="btn-flat black-text whitebg">
-                    Mensagens
-                </a>
-            </div>
-
         </center>
     </div>
     <script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
