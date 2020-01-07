@@ -12,30 +12,40 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="../css/materialize.min.css" media="screen,projection" />
-    <link rel="stylesheet" type="text/css" href="../css/index.css" />
     <link rel="stylesheet" type="text/css" href="../css/range.css" />
+    <link rel="stylesheet" type="text/css" href="../css/index.css" />
     <title>Log-In</title>
 </head>
 
 <body>
     <div class="content">
-        <div class="row">
-            <div class="col s10 offset-s1" id="msg">
-                <span class="flow-text">Informe a distância máxima</span>
-                <!-- <span id="msg" class="flow-text">Informe a distância máxima</span> -->
+        <center>
+            <div class="row">
+                <div class="col s12 m10 offset-m1">
+                    <div class="card indigo lighten-5" id="card">
+                        <div class="card-content black-text">
+                            <div class="row">
+                                <div class="row" style="border:3px solid black">
+                                    <div class="col s10 offset-s1" style="border:3px solid black" id="msg">
+                                        <span class="flow-text">Informe a distância máxima</span>
+                                    </div>
+                                    <div class="col s10 offset-s1" id="sliderDiv">
+                                        <form action="#" id="formteste">
+                                            <p class="range-field ">
+                                                <input type="range" id="slider" min="5" max="100" step="5" />
+                                                <button id="submit"
+                                                    class="btn waves-effect waves-light btn-blue black-text"
+                                                    type="submit" name="action">Enviar</button>
+                                            </p>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col s10 offset-s1" id="sliderDiv">
-                <form action="#" id="formteste">
-                    <p class="range-field ">
-                        <input type="range" id="slider" min="5" max="100" step="1" />
-                        <button id="submit" class="btn waves-effect waves-light btn-blue black-text" type="submit"
-                            name="action">Enviar</button>
-                    </p>
-                </form>
-            </div>
-        </div>
-        <!-- <div id="sliderDiv" class="container"> -->
-        <!-- </div> -->
+        </center>
     </div>
     <script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="../cordova.js"></script>

@@ -1,7 +1,9 @@
 #msg{
-  position: absolute;
+  /* position: relative; */
   margin-top: 30vh;
-  text-align: center;
+  padding-bottom: 1px;
+  
+  /* text-align: center; */
 } 
 
 #sliderDiv {
